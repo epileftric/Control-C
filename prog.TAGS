@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo Generando Tags en ~/.config/geany/tags/current.cpp.tags
+rm -f ~/.config/geany/tags/current.cpp.tags
+geany -gP ~/.config/geany/tags/current.cpp.tags include/*.h gui/*.h include/*/*.h src/*.h form/*.h
+
